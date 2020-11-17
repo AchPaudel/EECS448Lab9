@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title>Virtual Vending Machine</title>
+  <script type="text/javascript" src="formChecker.js"></script>
+</head>
+
+<body>
+
+  <h2>Welcome to The Epic Gamers Only Shop!</h2>
+
+  <form id="form" action="customerBackend.php" method="POST">
+    Username: <input type="text" name="username"></input><br> Password: <input type="password" name="password"></input><br>
+
+    <p>Please choose a game to purchase:</p><br>
+
+    Call of Duty: $60.00 <input name="cod" type="number" value="0"><br>
+    Rocket League: $20.00 <input name="rl" type="number" value="0"><br>
+    NBA 2k21: $69.00 <input name="nba" type="number" value="0"><br>
+
+
+    <p>Please select a shipping method:</p><br>
+
+    <input type="radio" name="shipping" value="0"> 7-Day: Free<br>
+    <input type="radio" name="shipping" value="5"> 3-Day: $5.00<br>
+    <input type="radio" name="shipping" value="50"> Overnight: $50.00<br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+
+</html>
